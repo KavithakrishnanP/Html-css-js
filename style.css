@@ -31,7 +31,7 @@ body{
 
 
 section{
-    min-height: 100vh;
+    min-height: 10vh;
     padding: 10rem 9% 2rem;
 
 }
@@ -199,7 +199,7 @@ color:var(--main-color);
 .btn:hover{
     box-shadow: none;
 }
-
+/* 
 .grid-container{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -255,8 +255,12 @@ color:var(--main-color);
   z-index: 0;
   margin-top:50px;
        
-}
+} */
     
+.skills{
+    display:grid;
+    align-content: center;
+}
 
 .grid-layout {
     display: grid;
@@ -562,6 +566,10 @@ transition: .5s ease;
         font-size: 55%;
         align-items: center;
     }
+
+    .grid-layout{
+        grid-template-columns:repeat(3,1fr);
+    }
     .project-container{
         grid-template-columns: 1fr;
     }
@@ -573,7 +581,5 @@ transition: .5s ease;
         font-size: 55%;
         align-items: center;
     }
-    .html{
-       font-size:50%;
-    }
+    
 }
